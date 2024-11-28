@@ -1,2 +1,2 @@
-# Pterodactyl Eggs
+# Shadow Eggs
 Pterodactyl Panel Egg Services

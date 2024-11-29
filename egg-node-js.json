@@ -10,12 +10,12 @@
   "description": "Nodejs Egg",
   "features": null,
   "docker_images": {
-    "Nodejs 22": "ghcr.io/shadow-x78/shadowdockers:nodejs_v22",
-    "Nodejs 20": "ghcr.io/shadow-x78/shadowdockers:nodejs_v20",
-    "Nodejs 18": "ghcr.io/shadow-x78/shadowdockers:nodejs_v18",
-    "Nodejs 16": "ghcr.io/shadow-x78/shadowdockers:nodejs_v16",
-    "Nodejs 14": "ghcr.io/shadow-x78/shadowdockers:nodejs_v14",
-    "Nodejs 12": "ghcr.io/shadow-x78/shadowdockers:nodejs_v12"
+    "Nodejs 22": "shadowx7/nodejs_v22",
+    "Nodejs 20": "shadowx7/nodejs_v20",
+    "Nodejs 18": "shadowx7/nodejs_v18",
+    "Nodejs 16": "shadowx7/nodejs_v16",
+    "Nodejs 14": "shadowx7/nodejs_v14",
+    "Nodejs 12": "shadowx7/nodejs_v12"
   },
   "file_denylist": [],
   "startup": "if [[ ! -z {{STARTUP_SCRIPT}} ]]; then /usr/local/bin/npm install; fi; if [[ -f /home/container/{{STARTUP_SCRIPT}} && ({{STARTUP_SCRIPT}} == *.js || {{STARTUP_SCRIPT}} == *.ts) ]]; then node /home/container/{{STARTUP_SCRIPT}}; else echo 'Invalid file type or file not found'; fi;",
